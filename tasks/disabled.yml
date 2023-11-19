@@ -1,14 +1,14 @@
 ---
-- name: Disabled service getty@tty1
+- name: Stopped service getty@tty1
   systemd:
     name: getty@tty1
-    state: disabled
+    state: stopped
     enabled: true
 
-- name: Disabled service getty-static
+- name: Stopped service getty-static
   systemd:
     name: getty-static
-    state: disabled
+    state: stopped
     enabled: true
 
 - name: Copy logind.conf
