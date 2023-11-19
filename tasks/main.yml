@@ -1,0 +1,7 @@
+---
+- name: General disabled
+  include_tasks: disabled.yml
+
+- name: Install nyancat
+  include_tasks: install_nyancat.yml
+  when: install_nyancat
