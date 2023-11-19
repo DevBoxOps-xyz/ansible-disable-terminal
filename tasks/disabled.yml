@@ -3,13 +3,13 @@
   systemd:
     name: getty@tty1
     state: stopped
-    enabled: true
+    enabled: false
 
 - name: Stopped service getty-static
   systemd:
     name: getty-static
     state: stopped
-    enabled: true
+    enabled: false
 
 - name: Copy logind.conf
   template:
